@@ -12,11 +12,12 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestConfig {
 
-    @LoadBalanced
+    // Commenting because it is now in each Application (OAuth 2)
+    /* @LoadBalanced
     @Bean
     public RestOperations restOperations() {
         return new RestTemplate();
-    }
+    } */
 
     @Bean
     public ObjectMapper objectMapper() {
